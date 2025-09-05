@@ -1,0 +1,23 @@
+Proposta de Solução para Captura de Dados em Sites com Navegação e Login
+
+Quando não existe um link direto para o conjunto de dados desejado e é necessário navegar por menus, realizar login ou clicar em botões para acessar o arquivo, a automação da coleta de dados pode ser feita utilizando técnicas de web scraping com automação de navegador. Abaixo está uma proposta de solução passo a passo:
+
+1. Utilizar Ferramentas de Automação de Navegador:
+   Ferramentas como Selenium, Playwright ou Puppeteer permitem controlar um navegador (Chrome, Firefox etc.) via código Python, JavaScript ou outras linguagens. Com elas, é possível simular ações humanas, como preencher formulários de login, clicar em menus, botões e navegar entre páginas.
+
+2. Automatizar o Processo de Login:
+   O script deve ser programado para acessar a página inicial do site, localizar os campos de usuário e senha, preenchê-los e submeter o formulário de login. Caso haja autenticação em duas etapas, pode ser necessário tratamento adicional.
+
+3. Simular a Navegação até o Arquivo:
+   Após o login, o script deve clicar nos menus e botões necessários para chegar até a página ou link de download do arquivo desejado, utilizando seletores de elementos (por ID, classe, texto etc.).
+
+4. Realizar o Download dos Dados:
+   Ao localizar o link ou botão de download, o script aciona o clique e aguarda o download do arquivo. Em alguns casos, pode ser necessário capturar o conteúdo da página e salvar como arquivo.
+
+5. Tratamento de Exceções e Esperas:
+   É importante incluir tratamento para eventuais erros de navegação, autenticação, lentidão de carregamento e mudanças de layout no site.
+
+6. Armazenar e Processar os Dados:
+   Após baixar o arquivo, o processamento segue como no exemplo anterior: leitura, transformação e armazenamento no formato desejado.
+
+Essa abordagem garante flexibilidade para acessar dados em sites que exigem navegação interativa. É importante ressaltar que o uso dessas técnicas deve respeitar os Termos de Uso do site e as legislações vigentes.
